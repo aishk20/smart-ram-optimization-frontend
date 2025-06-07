@@ -8,7 +8,7 @@ function App() {
 
   const handlePredict = async () => {
     try {
-      const response = await axios.post("https://smart-ram-optimization-9hhn.onrender.com/predict", { hour: parseInt(hour) }, {
+      const response = await axios.post("https://smart-ram-optimization-7dwg.onrender.com/predict", { hour: parseInt(hour) }, {
         headers: { "Content-Type": "application/json" }
       });
       if (response.data.apps && response.data.apps.length > 0) {
